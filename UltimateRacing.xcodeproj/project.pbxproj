@@ -1,0 +1,1200 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184776DC2B3E7CB300B39B84 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184776DB2B3E7CB300B39B84 /* UIImageView+LoadImage.swift */; };
+		184776DF2B3E7E8A00B39B84 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184776DE2B3E7E8A00B39B84 /* DateFormatter+.swift */; };
+		187723C02B17C02F00F486EA /* UIViewController+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187723BF2B17C02F00F486EA /* UIViewController+MyStyle.swift */; };
+		187B9BE72B38136800730BD3 /* ModelResultGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B9BE62B38136800730BD3 /* ModelResultGame.swift */; };
+		187B9BEA2B38196500730BD3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B9BE92B38196500730BD3 /* StorageManager.swift */; };
+		187BE2392B36E45F0098F98F /* UICollectionView+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BE2382B36E45F0098F98F /* UICollectionView+MyStyle.swift */; };
+		187F236D2B19160A005419B5 /* MyCompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F236C2B19160A005419B5 /* MyCompositionalLayout.swift */; };
+		187F23702B191E8B005419B5 /* UITextField+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F236F2B191E8B005419B5 /* UITextField+MyStyle.swift */; };
+		1880F1712B136DBD00EB7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1702B136DBD00EB7018 /* AppDelegate.swift */; };
+		1880F1732B136DBD00EB7018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1722B136DBD00EB7018 /* SceneDelegate.swift */; };
+		1880F1752B136DBD00EB7018 /* RecordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1742B136DBD00EB7018 /* RecordsController.swift */; };
+		1880F17A2B136DC200EB7018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1880F1792B136DC200EB7018 /* Assets.xcassets */; };
+		1880F17D2B136DC200EB7018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1880F17B2B136DC200EB7018 /* LaunchScreen.storyboard */; };
+		1880F1882B136DC300EB7018 /* UltimateRacingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1872B136DC300EB7018 /* UltimateRacingTests.swift */; };
+		1880F1922B136DC300EB7018 /* UltimateRacingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1912B136DC300EB7018 /* UltimateRacingUITests.swift */; };
+		1880F1942B136DC300EB7018 /* UltimateRacingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1932B136DC300EB7018 /* UltimateRacingUITestsLaunchTests.swift */; };
+		1880F1AD2B136EED00EB7018 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1AC2B136EED00EB7018 /* MainView.swift */; };
+		1880F1AF2B136F0900EB7018 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1AE2B136F0900EB7018 /* MainController.swift */; };
+		1880F1B12B136FE600EB7018 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1B02B136FE600EB7018 /* ModuleBuilder.swift */; };
+		1880F1B32B13702A00EB7018 /* RouterMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1B22B13702A00EB7018 /* RouterMain.swift */; };
+		1880F1B52B1381CD00EB7018 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1B42B1381CD00EB7018 /* MainPresenter.swift */; };
+		1880F1B82B13AFB700EB7018 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1B72B13AFB700EB7018 /* Fonts.swift */; };
+		1880F1BD2B13B0B100EB7018 /* UIView+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1BC2B13B0B100EB7018 /* UIView+MyStyle.swift */; };
+		1880F1C02B13B0ED00EB7018 /* UILabel+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1BF2B13B0ED00EB7018 /* UILabel+MyStyle.swift */; };
+		1880F1C42B13B13700EB7018 /* UIImageView+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1C32B13B13600EB7018 /* UIImageView+MyStyle.swift */; };
+		1880F1C72B13B17F00EB7018 /* UIStackView+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1C62B13B17F00EB7018 /* UIStackView+MyStyle.swift */; };
+		1880F1C92B13B20800EB7018 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1C82B13B20800EB7018 /* Colors.swift */; };
+		1880F1CD2B13B2C100EB7018 /* MyButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1CC2B13B2C100EB7018 /* MyButtons.swift */; };
+		1880F1D02B13B36E00EB7018 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1CF2B13B36E00EB7018 /* Images.swift */; };
+		1880F1D32B13B3F100EB7018 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1D22B13B3F100EB7018 /* Enums.swift */; };
+		1880F1D82B13B46600EB7018 /* UIButton+MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1D72B13B46600EB7018 /* UIButton+MyStyle.swift */; };
+		1880F1DA2B13B4BF00EB7018 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1D92B13B4BF00EB7018 /* SettingButton.swift */; };
+		1880F1DC2B13B51500EB7018 /* AppDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1DB2B13B51500EB7018 /* AppDesign.swift */; };
+		1880F1DE2B13B61B00EB7018 /* ModelMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1DD2B13B61B00EB7018 /* ModelMainView.swift */; };
+		1880F1E12B13B64C00EB7018 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1E02B13B64C00EB7018 /* Protocols.swift */; };
+		1880F1E72B13B8A600EB7018 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1E62B13B8A600EB7018 /* SettingController.swift */; };
+		1880F1E92B13B94000EB7018 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1E82B13B94000EB7018 /* SettingView.swift */; };
+		1880F1EB2B13B9B200EB7018 /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1EA2B13B9B200EB7018 /* RecordsView.swift */; };
+		1880F1EE2B13BAA400EB7018 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1ED2B13BAA400EB7018 /* RecordCell.swift */; };
+		1880F1F02B13BC7900EB7018 /* RecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880F1EF2B13BC7900EB7018 /* RecordPresenter.swift */; };
+		188409EB2B371D1D00275CFC /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188409EA2B371D1D00275CFC /* UserDefaultsManager.swift */; };
+		188409ED2B371E8600275CFC /* ModelSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188409EC2B371E8600275CFC /* ModelSetting.swift */; };
+		188409F22B372A0200275CFC /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188409F12B372A0200275CFC /* Mapper.swift */; };
+		188BA5772B261FFE00B8F7B1 /* ObstacleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BA5762B261FFE00B8F7B1 /* ObstacleView.swift */; };
+		188C33862B1B6F9A004D0748 /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C33852B1B6F9A004D0748 /* CALayer+Animation.swift */; };
+		188C33882B1C89DC004D0748 /* ModelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C33872B1C89DC004D0748 /* ModelGame.swift */; };
+		1895BBD42B2F2E67000CA9AC /* NameUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBD32B2F2E67000CA9AC /* NameUserCell.swift */; };
+		1895BBD62B2F2F1C000CA9AC /* CarSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBD52B2F2F1C000CA9AC /* CarSelectionCell.swift */; };
+		1895BBD82B2F2F5D000CA9AC /* GeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBD72B2F2F5D000CA9AC /* GeneralCell.swift */; };
+		1895BBDB2B2F2FD4000CA9AC /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBDA2B2F2FD4000CA9AC /* MainHeader.swift */; };
+		1895BBDD2B2F2FF1000CA9AC /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBDC2B2F2FF1000CA9AC /* SectionHeader.swift */; };
+		1895BBDF2B2F30A7000CA9AC /* ModelMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBDE2B2F30A7000CA9AC /* ModelMainHeader.swift */; };
+		1895BBE12B2F3112000CA9AC /* ModelSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBE02B2F3112000CA9AC /* ModelSectionHeader.swift */; };
+		1895BBE42B2F3219000CA9AC /* ModelSettingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBE32B2F3219000CA9AC /* ModelSettingDTO.swift */; };
+		1895BBE62B2F3275000CA9AC /* ModelNameUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBE52B2F3275000CA9AC /* ModelNameUserCell.swift */; };
+		1895BBE82B2F3293000CA9AC /* ModelCarSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBE72B2F3293000CA9AC /* ModelCarSelectionCell.swift */; };
+		1895BBEA2B2F32B6000CA9AC /* ModelGeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBE92B2F32B6000CA9AC /* ModelGeneralCell.swift */; };
+		1895BBED2B2F3369000CA9AC /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBEC2B2F3369000CA9AC /* CarCell.swift */; };
+		1895BBEF2B2F346F000CA9AC /* CarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBEE2B2F346F000CA9AC /* CarouselLayout.swift */; };
+		1895BBF12B2F3674000CA9AC /* ModelGameDifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBF02B2F3674000CA9AC /* ModelGameDifficultyLevel.swift */; };
+		1895BBF32B2F37BB000CA9AC /* ModelSelectControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBF22B2F37BB000CA9AC /* ModelSelectControl.swift */; };
+		1895BBF82B2F79AF000CA9AC /* UITextField+BorderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895BBF72B2F79AF000CA9AC /* UITextField+BorderStyle.swift */; };
+		18EAEB582B15272300A294C3 /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAEB572B15272300A294C3 /* SettingPresenter.swift */; };
+		18EAEB5E2B1528C600A294C3 /* GameRacingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAEB5D2B1528C600A294C3 /* GameRacingController.swift */; };
+		18EAEB612B1528E500A294C3 /* GameRacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAEB602B1528E500A294C3 /* GameRacingView.swift */; };
+		18EAEB632B1528FF00A294C3 /* GameRacingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAEB622B1528FF00A294C3 /* GameRacingPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1880F1842B136DC300EB7018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1880F1652B136DBD00EB7018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1880F16C2B136DBD00EB7018;
+			remoteInfo = UltimateRacing;
+		};
+		1880F18E2B136DC300EB7018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1880F1652B136DBD00EB7018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1880F16C2B136DBD00EB7018;
+			remoteInfo = UltimateRacing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184776DB2B3E7CB300B39B84 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
+		184776DE2B3E7E8A00B39B84 /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
+		187723BF2B17C02F00F486EA /* UIViewController+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+MyStyle.swift"; sourceTree = "<group>"; };
+		187B9BE62B38136800730BD3 /* ModelResultGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelResultGame.swift; sourceTree = "<group>"; };
+		187B9BE92B38196500730BD3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		187BE2382B36E45F0098F98F /* UICollectionView+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+MyStyle.swift"; sourceTree = "<group>"; };
+		187F236C2B19160A005419B5 /* MyCompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompositionalLayout.swift; sourceTree = "<group>"; };
+		187F236F2B191E8B005419B5 /* UITextField+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+MyStyle.swift"; sourceTree = "<group>"; };
+		1880F16D2B136DBD00EB7018 /* UltimateRacing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateRacing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1880F1702B136DBD00EB7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1880F1722B136DBD00EB7018 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1880F1742B136DBD00EB7018 /* RecordsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsController.swift; sourceTree = "<group>"; };
+		1880F1792B136DC200EB7018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1880F17C2B136DC200EB7018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1880F17E2B136DC200EB7018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1880F1832B136DC300EB7018 /* UltimateRacingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateRacingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1880F1872B136DC300EB7018 /* UltimateRacingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateRacingTests.swift; sourceTree = "<group>"; };
+		1880F18D2B136DC300EB7018 /* UltimateRacingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimateRacingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1880F1912B136DC300EB7018 /* UltimateRacingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateRacingUITests.swift; sourceTree = "<group>"; };
+		1880F1932B136DC300EB7018 /* UltimateRacingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateRacingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1880F1AC2B136EED00EB7018 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1880F1AE2B136F0900EB7018 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		1880F1B02B136FE600EB7018 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		1880F1B22B13702A00EB7018 /* RouterMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMain.swift; sourceTree = "<group>"; };
+		1880F1B42B1381CD00EB7018 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		1880F1B72B13AFB700EB7018 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		1880F1BC2B13B0B100EB7018 /* UIView+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MyStyle.swift"; sourceTree = "<group>"; };
+		1880F1BF2B13B0ED00EB7018 /* UILabel+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+MyStyle.swift"; sourceTree = "<group>"; };
+		1880F1C32B13B13600EB7018 /* UIImageView+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+MyStyle.swift"; sourceTree = "<group>"; };
+		1880F1C62B13B17F00EB7018 /* UIStackView+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+MyStyle.swift"; sourceTree = "<group>"; };
+		1880F1C82B13B20800EB7018 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1880F1CC2B13B2C100EB7018 /* MyButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButtons.swift; sourceTree = "<group>"; };
+		1880F1CF2B13B36E00EB7018 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		1880F1D22B13B3F100EB7018 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		1880F1D72B13B46600EB7018 /* UIButton+MyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+MyStyle.swift"; sourceTree = "<group>"; };
+		1880F1D92B13B4BF00EB7018 /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
+		1880F1DB2B13B51500EB7018 /* AppDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesign.swift; sourceTree = "<group>"; };
+		1880F1DD2B13B61B00EB7018 /* ModelMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMainView.swift; sourceTree = "<group>"; };
+		1880F1E02B13B64C00EB7018 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		1880F1E62B13B8A600EB7018 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		1880F1E82B13B94000EB7018 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		1880F1EA2B13B9B200EB7018 /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		1880F1ED2B13BAA400EB7018 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
+		1880F1EF2B13BC7900EB7018 /* RecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPresenter.swift; sourceTree = "<group>"; };
+		188409EA2B371D1D00275CFC /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		188409EC2B371E8600275CFC /* ModelSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSetting.swift; sourceTree = "<group>"; };
+		188409F12B372A0200275CFC /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		188BA5762B261FFE00B8F7B1 /* ObstacleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleView.swift; sourceTree = "<group>"; };
+		188C33852B1B6F9A004D0748 /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
+		188C33872B1C89DC004D0748 /* ModelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGame.swift; sourceTree = "<group>"; };
+		1895BBD32B2F2E67000CA9AC /* NameUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameUserCell.swift; sourceTree = "<group>"; };
+		1895BBD52B2F2F1C000CA9AC /* CarSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelectionCell.swift; sourceTree = "<group>"; };
+		1895BBD72B2F2F5D000CA9AC /* GeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCell.swift; sourceTree = "<group>"; };
+		1895BBDA2B2F2FD4000CA9AC /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		1895BBDC2B2F2FF1000CA9AC /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		1895BBDE2B2F30A7000CA9AC /* ModelMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMainHeader.swift; sourceTree = "<group>"; };
+		1895BBE02B2F3112000CA9AC /* ModelSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSectionHeader.swift; sourceTree = "<group>"; };
+		1895BBE32B2F3219000CA9AC /* ModelSettingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSettingDTO.swift; sourceTree = "<group>"; };
+		1895BBE52B2F3275000CA9AC /* ModelNameUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNameUserCell.swift; sourceTree = "<group>"; };
+		1895BBE72B2F3293000CA9AC /* ModelCarSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCarSelectionCell.swift; sourceTree = "<group>"; };
+		1895BBE92B2F32B6000CA9AC /* ModelGeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGeneralCell.swift; sourceTree = "<group>"; };
+		1895BBEC2B2F3369000CA9AC /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		1895BBEE2B2F346F000CA9AC /* CarouselLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselLayout.swift; sourceTree = "<group>"; };
+		1895BBF02B2F3674000CA9AC /* ModelGameDifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGameDifficultyLevel.swift; sourceTree = "<group>"; };
+		1895BBF22B2F37BB000CA9AC /* ModelSelectControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSelectControl.swift; sourceTree = "<group>"; };
+		1895BBF72B2F79AF000CA9AC /* UITextField+BorderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+BorderStyle.swift"; sourceTree = "<group>"; };
+		18EAEB572B15272300A294C3 /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		18EAEB5D2B1528C600A294C3 /* GameRacingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRacingController.swift; sourceTree = "<group>"; };
+		18EAEB602B1528E500A294C3 /* GameRacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRacingView.swift; sourceTree = "<group>"; };
+		18EAEB622B1528FF00A294C3 /* GameRacingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRacingPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1880F16A2B136DBD00EB7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880F1802B136DC300EB7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880F18A2B136DC300EB7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184776DD2B3E7E7200B39B84 /* DateFormatter+ */ = {
+			isa = PBXGroup;
+			children = (
+				184776DE2B3E7E8A00B39B84 /* DateFormatter+.swift */,
+			);
+			path = "DateFormatter+";
+			sourceTree = "<group>";
+		};
+		187723BE2B17C00500F486EA /* UIViewController+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				187723BF2B17C02F00F486EA /* UIViewController+MyStyle.swift */,
+			);
+			path = "UIViewController+MyStyle";
+			sourceTree = "<group>";
+		};
+		187B9BE82B38172500730BD3 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				187B9BE92B38196500730BD3 /* StorageManager.swift */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
+		187BE2372B36E42E0098F98F /* UICollectionView+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				187BE2382B36E45F0098F98F /* UICollectionView+MyStyle.swift */,
+			);
+			path = "UICollectionView+MyStyle";
+			sourceTree = "<group>";
+		};
+		187F236B2B1915EF005419B5 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				187F236C2B19160A005419B5 /* MyCompositionalLayout.swift */,
+				1895BBEE2B2F346F000CA9AC /* CarouselLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		187F236E2B191E64005419B5 /* UITextField+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				187F236F2B191E8B005419B5 /* UITextField+MyStyle.swift */,
+				1895BBF72B2F79AF000CA9AC /* UITextField+BorderStyle.swift */,
+			);
+			path = "UITextField+MyStyle";
+			sourceTree = "<group>";
+		};
+		1880F1642B136DBD00EB7018 = {
+			isa = PBXGroup;
+			children = (
+				1880F16F2B136DBD00EB7018 /* UltimateRacing */,
+				1880F1862B136DC300EB7018 /* UltimateRacingTests */,
+				1880F1902B136DC300EB7018 /* UltimateRacingUITests */,
+				1880F16E2B136DBD00EB7018 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1880F16E2B136DBD00EB7018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1880F16D2B136DBD00EB7018 /* UltimateRacing.app */,
+				1880F1832B136DC300EB7018 /* UltimateRacingTests.xctest */,
+				1880F18D2B136DC300EB7018 /* UltimateRacingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1880F16F2B136DBD00EB7018 /* UltimateRacing */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1A02B136DF100EB7018 /* App */,
+				1880F1A22B136E1A00EB7018 /* Router */,
+				1880F1A12B136E0900EB7018 /* Builder */,
+				1880F1A32B136E3B00EB7018 /* Screens */,
+				1880F1BA2B13B05F00EB7018 /* Library */,
+				188409F32B372A1600275CFC /* Services */,
+				1880F1792B136DC200EB7018 /* Assets.xcassets */,
+				1880F17B2B136DC200EB7018 /* LaunchScreen.storyboard */,
+				1880F17E2B136DC200EB7018 /* Info.plist */,
+			);
+			path = UltimateRacing;
+			sourceTree = "<group>";
+		};
+		1880F1862B136DC300EB7018 /* UltimateRacingTests */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1872B136DC300EB7018 /* UltimateRacingTests.swift */,
+			);
+			path = UltimateRacingTests;
+			sourceTree = "<group>";
+		};
+		1880F1902B136DC300EB7018 /* UltimateRacingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1912B136DC300EB7018 /* UltimateRacingUITests.swift */,
+				1880F1932B136DC300EB7018 /* UltimateRacingUITestsLaunchTests.swift */,
+			);
+			path = UltimateRacingUITests;
+			sourceTree = "<group>";
+		};
+		1880F1A02B136DF100EB7018 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1702B136DBD00EB7018 /* AppDelegate.swift */,
+				1880F1722B136DBD00EB7018 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1880F1A12B136E0900EB7018 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1B02B136FE600EB7018 /* ModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		1880F1A22B136E1A00EB7018 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1B22B13702A00EB7018 /* RouterMain.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1880F1A32B136E3B00EB7018 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				18EAEB592B15286E00A294C3 /* Game */,
+				1880F1A82B136E9900EB7018 /* Main */,
+				1880F1A42B136E5200EB7018 /* Record */,
+				1880F1E22B13B87300EB7018 /* Setting */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1880F1A42B136E5200EB7018 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1A62B136E6600EB7018 /* Presenter */,
+				1880F1A52B136E6000EB7018 /* View */,
+				1880F1A72B136E6E00EB7018 /* Model */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		1880F1A52B136E6000EB7018 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1742B136DBD00EB7018 /* RecordsController.swift */,
+				1880F1EA2B13B9B200EB7018 /* RecordsView.swift */,
+				1880F1EC2B13BA8600EB7018 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1880F1A62B136E6600EB7018 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1EF2B13BC7900EB7018 /* RecordPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1880F1A72B136E6E00EB7018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				187B9BE62B38136800730BD3 /* ModelResultGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1880F1A82B136E9900EB7018 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1AB2B136EB900EB7018 /* Presenter */,
+				1880F1A92B136EAC00EB7018 /* View */,
+				1880F1AA2B136EB300EB7018 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1880F1A92B136EAC00EB7018 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1AE2B136F0900EB7018 /* MainController.swift */,
+				1880F1AC2B136EED00EB7018 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1880F1AA2B136EB300EB7018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1DD2B13B61B00EB7018 /* ModelMainView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1880F1AB2B136EB900EB7018 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1B42B1381CD00EB7018 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1880F1B62B13AF9B00EB7018 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1B72B13AFB700EB7018 /* Fonts.swift */,
+				1880F1C82B13B20800EB7018 /* Colors.swift */,
+				1880F1CF2B13B36E00EB7018 /* Images.swift */,
+				1880F1DB2B13B51500EB7018 /* AppDesign.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1880F1B92B13B03A00EB7018 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1BB2B13B0A200EB7018 /* UIView+MyStyle */,
+				187BE2372B36E42E0098F98F /* UICollectionView+MyStyle */,
+				188C33842B1B6F75004D0748 /* CALayer */,
+				187F236E2B191E64005419B5 /* UITextField+MyStyle */,
+				187723BE2B17C00500F486EA /* UIViewController+MyStyle */,
+				1880F1D62B13B44C00EB7018 /* UIButton+MyStyle */,
+				1880F1C52B13B17400EB7018 /* UIStackView+MyStyle */,
+				1880F1C22B13B12900EB7018 /* UIImageView+MyStyle */,
+				1880F1BE2B13B0E000EB7018 /* UILabel+MyStyle */,
+				184776DD2B3E7E7200B39B84 /* DateFormatter+ */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1880F1BA2B13B05F00EB7018 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				187F236B2B1915EF005419B5 /* Layout */,
+				1880F1DF2B13B63E00EB7018 /* Protocols */,
+				1880F1D12B13B3E400EB7018 /* Enums */,
+				1880F1CA2B13B23C00EB7018 /* CustomViews */,
+				1880F1B62B13AF9B00EB7018 /* Constants */,
+				1880F1B92B13B03A00EB7018 /* Extension */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1880F1BB2B13B0A200EB7018 /* UIView+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1BC2B13B0B100EB7018 /* UIView+MyStyle.swift */,
+			);
+			path = "UIView+MyStyle";
+			sourceTree = "<group>";
+		};
+		1880F1BE2B13B0E000EB7018 /* UILabel+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1BF2B13B0ED00EB7018 /* UILabel+MyStyle.swift */,
+			);
+			path = "UILabel+MyStyle";
+			sourceTree = "<group>";
+		};
+		1880F1C22B13B12900EB7018 /* UIImageView+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1C32B13B13600EB7018 /* UIImageView+MyStyle.swift */,
+				184776DB2B3E7CB300B39B84 /* UIImageView+LoadImage.swift */,
+			);
+			path = "UIImageView+MyStyle";
+			sourceTree = "<group>";
+		};
+		1880F1C52B13B17400EB7018 /* UIStackView+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1C62B13B17F00EB7018 /* UIStackView+MyStyle.swift */,
+			);
+			path = "UIStackView+MyStyle";
+			sourceTree = "<group>";
+		};
+		1880F1CA2B13B23C00EB7018 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1CB2B13B25400EB7018 /* UIButtons */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1880F1CB2B13B25400EB7018 /* UIButtons */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1CC2B13B2C100EB7018 /* MyButtons.swift */,
+				1880F1D92B13B4BF00EB7018 /* SettingButton.swift */,
+			);
+			path = UIButtons;
+			sourceTree = "<group>";
+		};
+		1880F1D12B13B3E400EB7018 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1D22B13B3F100EB7018 /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1880F1D62B13B44C00EB7018 /* UIButton+MyStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1D72B13B46600EB7018 /* UIButton+MyStyle.swift */,
+			);
+			path = "UIButton+MyStyle";
+			sourceTree = "<group>";
+		};
+		1880F1DF2B13B63E00EB7018 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1E02B13B64C00EB7018 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1880F1E22B13B87300EB7018 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1E42B13B88300EB7018 /* Presenter */,
+				1880F1E32B13B87E00EB7018 /* View */,
+				1880F1E52B13B88B00EB7018 /* Model */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		1880F1E32B13B87E00EB7018 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1E62B13B8A600EB7018 /* SettingController.swift */,
+				1880F1E82B13B94000EB7018 /* SettingView.swift */,
+				1895BBD22B2F2DCD000CA9AC /* Cells */,
+				1895BBD92B2F2FB7000CA9AC /* Headers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1880F1E42B13B88300EB7018 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18EAEB572B15272300A294C3 /* SettingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1880F1E52B13B88B00EB7018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1895BBDE2B2F30A7000CA9AC /* ModelMainHeader.swift */,
+				1895BBE02B2F3112000CA9AC /* ModelSectionHeader.swift */,
+				1895BBE32B2F3219000CA9AC /* ModelSettingDTO.swift */,
+				1895BBE52B2F3275000CA9AC /* ModelNameUserCell.swift */,
+				1895BBE72B2F3293000CA9AC /* ModelCarSelectionCell.swift */,
+				1895BBE92B2F32B6000CA9AC /* ModelGeneralCell.swift */,
+				1895BBF02B2F3674000CA9AC /* ModelGameDifficultyLevel.swift */,
+				1895BBF22B2F37BB000CA9AC /* ModelSelectControl.swift */,
+				188409EC2B371E8600275CFC /* ModelSetting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1880F1EC2B13BA8600EB7018 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1880F1ED2B13BAA400EB7018 /* RecordCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		188409E92B371CFA00275CFC /* UserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				188409EA2B371D1D00275CFC /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaultsManager;
+			sourceTree = "<group>";
+		};
+		188409F02B3729F100275CFC /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				188409F12B372A0200275CFC /* Mapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		188409F32B372A1600275CFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				187B9BE82B38172500730BD3 /* StorageManager */,
+				188409F02B3729F100275CFC /* Mapper */,
+				188409E92B371CFA00275CFC /* UserDefaultsManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		188C33842B1B6F75004D0748 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				188C33852B1B6F9A004D0748 /* CALayer+Animation.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		1895BBD22B2F2DCD000CA9AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1895BBD32B2F2E67000CA9AC /* NameUserCell.swift */,
+				1895BBD52B2F2F1C000CA9AC /* CarSelectionCell.swift */,
+				1895BBD72B2F2F5D000CA9AC /* GeneralCell.swift */,
+				1895BBEB2B2F3339000CA9AC /* CollectionCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1895BBD92B2F2FB7000CA9AC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1895BBDA2B2F2FD4000CA9AC /* MainHeader.swift */,
+				1895BBDC2B2F2FF1000CA9AC /* SectionHeader.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		1895BBEB2B2F3339000CA9AC /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				1895BBEC2B2F3369000CA9AC /* CarCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		18EAEB592B15286E00A294C3 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				18EAEB5A2B15288700A294C3 /* Presenter */,
+				18EAEB5B2B15288D00A294C3 /* View */,
+				18EAEB5C2B15289200A294C3 /* Model */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		18EAEB5A2B15288700A294C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18EAEB622B1528FF00A294C3 /* GameRacingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		18EAEB5B2B15288D00A294C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18EAEB5D2B1528C600A294C3 /* GameRacingController.swift */,
+				18EAEB602B1528E500A294C3 /* GameRacingView.swift */,
+				188BA5762B261FFE00B8F7B1 /* ObstacleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18EAEB5C2B15289200A294C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				188C33872B1C89DC004D0748 /* ModelGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1880F16C2B136DBD00EB7018 /* UltimateRacing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1880F1972B136DC300EB7018 /* Build configuration list for PBXNativeTarget "UltimateRacing" */;
+			buildPhases = (
+				1880F1692B136DBD00EB7018 /* Sources */,
+				1880F16A2B136DBD00EB7018 /* Frameworks */,
+				1880F16B2B136DBD00EB7018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UltimateRacing;
+			productName = UltimateRacing;
+			productReference = 1880F16D2B136DBD00EB7018 /* UltimateRacing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1880F1822B136DC300EB7018 /* UltimateRacingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1880F19A2B136DC300EB7018 /* Build configuration list for PBXNativeTarget "UltimateRacingTests" */;
+			buildPhases = (
+				1880F17F2B136DC300EB7018 /* Sources */,
+				1880F1802B136DC300EB7018 /* Frameworks */,
+				1880F1812B136DC300EB7018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1880F1852B136DC300EB7018 /* PBXTargetDependency */,
+			);
+			name = UltimateRacingTests;
+			productName = UltimateRacingTests;
+			productReference = 1880F1832B136DC300EB7018 /* UltimateRacingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1880F18C2B136DC300EB7018 /* UltimateRacingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1880F19D2B136DC300EB7018 /* Build configuration list for PBXNativeTarget "UltimateRacingUITests" */;
+			buildPhases = (
+				1880F1892B136DC300EB7018 /* Sources */,
+				1880F18A2B136DC300EB7018 /* Frameworks */,
+				1880F18B2B136DC300EB7018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1880F18F2B136DC300EB7018 /* PBXTargetDependency */,
+			);
+			name = UltimateRacingUITests;
+			productName = UltimateRacingUITests;
+			productReference = 1880F18D2B136DC300EB7018 /* UltimateRacingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1880F1652B136DBD00EB7018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1880F16C2B136DBD00EB7018 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					1880F1822B136DC300EB7018 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1880F16C2B136DBD00EB7018;
+					};
+					1880F18C2B136DC300EB7018 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1880F16C2B136DBD00EB7018;
+					};
+				};
+			};
+			buildConfigurationList = 1880F1682B136DBD00EB7018 /* Build configuration list for PBXProject "UltimateRacing" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1880F1642B136DBD00EB7018;
+			productRefGroup = 1880F16E2B136DBD00EB7018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1880F16C2B136DBD00EB7018 /* UltimateRacing */,
+				1880F1822B136DC300EB7018 /* UltimateRacingTests */,
+				1880F18C2B136DC300EB7018 /* UltimateRacingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1880F16B2B136DBD00EB7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1880F17D2B136DC200EB7018 /* LaunchScreen.storyboard in Resources */,
+				1880F17A2B136DC200EB7018 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880F1812B136DC300EB7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880F18B2B136DC300EB7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1880F1692B136DBD00EB7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1880F1C02B13B0ED00EB7018 /* UILabel+MyStyle.swift in Sources */,
+				1880F1E12B13B64C00EB7018 /* Protocols.swift in Sources */,
+				1880F1752B136DBD00EB7018 /* RecordsController.swift in Sources */,
+				184776DF2B3E7E8A00B39B84 /* DateFormatter+.swift in Sources */,
+				1895BBF32B2F37BB000CA9AC /* ModelSelectControl.swift in Sources */,
+				188409F22B372A0200275CFC /* Mapper.swift in Sources */,
+				1895BBE62B2F3275000CA9AC /* ModelNameUserCell.swift in Sources */,
+				188BA5772B261FFE00B8F7B1 /* ObstacleView.swift in Sources */,
+				1880F1DC2B13B51500EB7018 /* AppDesign.swift in Sources */,
+				1880F1C42B13B13700EB7018 /* UIImageView+MyStyle.swift in Sources */,
+				1880F1C92B13B20800EB7018 /* Colors.swift in Sources */,
+				188C33862B1B6F9A004D0748 /* CALayer+Animation.swift in Sources */,
+				1895BBDD2B2F2FF1000CA9AC /* SectionHeader.swift in Sources */,
+				1895BBDB2B2F2FD4000CA9AC /* MainHeader.swift in Sources */,
+				1895BBD82B2F2F5D000CA9AC /* GeneralCell.swift in Sources */,
+				1880F1E92B13B94000EB7018 /* SettingView.swift in Sources */,
+				1880F1EB2B13B9B200EB7018 /* RecordsView.swift in Sources */,
+				1895BBF12B2F3674000CA9AC /* ModelGameDifficultyLevel.swift in Sources */,
+				1895BBD62B2F2F1C000CA9AC /* CarSelectionCell.swift in Sources */,
+				1880F1AD2B136EED00EB7018 /* MainView.swift in Sources */,
+				187723C02B17C02F00F486EA /* UIViewController+MyStyle.swift in Sources */,
+				1880F1D32B13B3F100EB7018 /* Enums.swift in Sources */,
+				1895BBDF2B2F30A7000CA9AC /* ModelMainHeader.swift in Sources */,
+				1880F1F02B13BC7900EB7018 /* RecordPresenter.swift in Sources */,
+				187F23702B191E8B005419B5 /* UITextField+MyStyle.swift in Sources */,
+				188C33882B1C89DC004D0748 /* ModelGame.swift in Sources */,
+				1880F1712B136DBD00EB7018 /* AppDelegate.swift in Sources */,
+				187F236D2B19160A005419B5 /* MyCompositionalLayout.swift in Sources */,
+				18EAEB5E2B1528C600A294C3 /* GameRacingController.swift in Sources */,
+				1880F1DE2B13B61B00EB7018 /* ModelMainView.swift in Sources */,
+				1895BBD42B2F2E67000CA9AC /* NameUserCell.swift in Sources */,
+				1880F1EE2B13BAA400EB7018 /* RecordCell.swift in Sources */,
+				1895BBE12B2F3112000CA9AC /* ModelSectionHeader.swift in Sources */,
+				1895BBEA2B2F32B6000CA9AC /* ModelGeneralCell.swift in Sources */,
+				1895BBF82B2F79AF000CA9AC /* UITextField+BorderStyle.swift in Sources */,
+				1880F1DA2B13B4BF00EB7018 /* SettingButton.swift in Sources */,
+				1880F1E72B13B8A600EB7018 /* SettingController.swift in Sources */,
+				1895BBED2B2F3369000CA9AC /* CarCell.swift in Sources */,
+				1880F1D82B13B46600EB7018 /* UIButton+MyStyle.swift in Sources */,
+				1880F1B52B1381CD00EB7018 /* MainPresenter.swift in Sources */,
+				1880F1BD2B13B0B100EB7018 /* UIView+MyStyle.swift in Sources */,
+				1880F1732B136DBD00EB7018 /* SceneDelegate.swift in Sources */,
+				1880F1CD2B13B2C100EB7018 /* MyButtons.swift in Sources */,
+				1880F1B32B13702A00EB7018 /* RouterMain.swift in Sources */,
+				1880F1AF2B136F0900EB7018 /* MainController.swift in Sources */,
+				1880F1C72B13B17F00EB7018 /* UIStackView+MyStyle.swift in Sources */,
+				18EAEB632B1528FF00A294C3 /* GameRacingPresenter.swift in Sources */,
+				1895BBEF2B2F346F000CA9AC /* CarouselLayout.swift in Sources */,
+				1895BBE82B2F3293000CA9AC /* ModelCarSelectionCell.swift in Sources */,
+				188409ED2B371E8600275CFC /* ModelSetting.swift in Sources */,
+				184776DC2B3E7CB300B39B84 /* UIImageView+LoadImage.swift in Sources */,
+				1895BBE42B2F3219000CA9AC /* ModelSettingDTO.swift in Sources */,
+				1880F1D02B13B36E00EB7018 /* Images.swift in Sources */,
+				18EAEB582B15272300A294C3 /* SettingPresenter.swift in Sources */,
+				187B9BEA2B38196500730BD3 /* StorageManager.swift in Sources */,
+				1880F1B82B13AFB700EB7018 /* Fonts.swift in Sources */,
+				188409EB2B371D1D00275CFC /* UserDefaultsManager.swift in Sources */,
+				1880F1B12B136FE600EB7018 /* ModuleBuilder.swift in Sources */,
+				187B9BE72B38136800730BD3 /* ModelResultGame.swift in Sources */,
+				187BE2392B36E45F0098F98F /* UICollectionView+MyStyle.swift in Sources */,
+				18EAEB612B1528E500A294C3 /* GameRacingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880F17F2B136DC300EB7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1880F1882B136DC300EB7018 /* UltimateRacingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880F1892B136DC300EB7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1880F1922B136DC300EB7018 /* UltimateRacingUITests.swift in Sources */,
+				1880F1942B136DC300EB7018 /* UltimateRacingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1880F1852B136DC300EB7018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1880F16C2B136DBD00EB7018 /* UltimateRacing */;
+			targetProxy = 1880F1842B136DC300EB7018 /* PBXContainerItemProxy */;
+		};
+		1880F18F2B136DC300EB7018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1880F16C2B136DBD00EB7018 /* UltimateRacing */;
+			targetProxy = 1880F18E2B136DC300EB7018 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1880F17B2B136DC200EB7018 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1880F17C2B136DC200EB7018 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1880F1952B136DC300EB7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1880F1962B136DC300EB7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1880F1982B136DC300EB7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQ82VEXXC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimateRacing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to select photos for image messages";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregoryvit.totSamiiAnatolii.UltimateRacing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1880F1992B136DC300EB7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimateRacing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to select photos for image messages";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = totSamiiAnatolii.UltimateRacing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1880F19B2B136DC300EB7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WF9NXXAU88;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = totSamiiAnatolii.UltimateRacingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UltimateRacing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UltimateRacing";
+			};
+			name = Debug;
+		};
+		1880F19C2B136DC300EB7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WF9NXXAU88;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = totSamiiAnatolii.UltimateRacingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UltimateRacing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UltimateRacing";
+			};
+			name = Release;
+		};
+		1880F19E2B136DC300EB7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WF9NXXAU88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = totSamiiAnatolii.UltimateRacingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UltimateRacing;
+			};
+			name = Debug;
+		};
+		1880F19F2B136DC300EB7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WF9NXXAU88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = totSamiiAnatolii.UltimateRacingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UltimateRacing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1880F1682B136DBD00EB7018 /* Build configuration list for PBXProject "UltimateRacing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1880F1952B136DC300EB7018 /* Debug */,
+				1880F1962B136DC300EB7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1880F1972B136DC300EB7018 /* Build configuration list for PBXNativeTarget "UltimateRacing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1880F1982B136DC300EB7018 /* Debug */,
+				1880F1992B136DC300EB7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1880F19A2B136DC300EB7018 /* Build configuration list for PBXNativeTarget "UltimateRacingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1880F19B2B136DC300EB7018 /* Debug */,
+				1880F19C2B136DC300EB7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1880F19D2B136DC300EB7018 /* Build configuration list for PBXNativeTarget "UltimateRacingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1880F19E2B136DC300EB7018 /* Debug */,
+				1880F19F2B136DC300EB7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1880F1652B136DBD00EB7018 /* Project object */;
+}
