@@ -10,13 +10,12 @@ import UIKit
 final class RecordsView: UIView {
     
     //MARK: Properties
+    
     private var onBackButton: (()->Void)?
     
-    public var collectionView: UICollectionView!
-    
-    private func configureTableView() {
+    public var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.backgroundColor = Colors.mainBackgroundColor
@@ -24,13 +23,14 @@ final class RecordsView: UIView {
         collectionView.allowsMultipleSelection = false
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
         collectionView.register(RecordCell.self, forCellWithReuseIdentifier: RecordCell.identifire)
-    }
-
+        return collectionView
+    }()
+ 
     //MARK: Init
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = Colors.mainBackgroundColor
-        configureTableView()
         setViewHierarhies()
         setConstraints()
     }
@@ -38,6 +38,8 @@ final class RecordsView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - Private methods
     
     private func setViewHierarhies() {
         self.addSubview(collectionView)

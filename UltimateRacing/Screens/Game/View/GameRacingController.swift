@@ -80,7 +80,7 @@ extension GameRacingController: GameRacingViewProtocol {
     }
     
     func startGame(_ settingForGame: ModelSetting) {
-        gameRacingView.changeSpeed(settingForGame)
+        gameRacingView.configureGame(settingForGame)
     }
     
     func createObstacle() {

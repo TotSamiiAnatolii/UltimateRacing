@@ -44,7 +44,7 @@ final class SettingPresenter: NSObject, SettingPresenterProtocol {
     
     private var modelSetting: ModelSetting?
        
-    var model: ModelSettingDTO? {
+    private var model: ModelSettingDTO? {
         didSet {
             guard let model else { return }
             view?.success(model: model)

@@ -312,4 +312,13 @@ final class GameRacingView: UIView {
         gravity.magnitude = settingForGame.lavel.speed.magnitude
         gravity.angle = .pi / 2
     }
+    
+    public func setColorCar(_ color: UIColor) {
+        car.backgroundColor = color
+    }
+    
+    public func configureGame(_ settingForGame: ModelSetting) {
+        changeSpeed(settingForGame)
+        setColorCar(settingForGame.carColor)
+    }
 }

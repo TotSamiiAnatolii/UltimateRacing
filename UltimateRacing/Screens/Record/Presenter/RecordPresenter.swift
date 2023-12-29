@@ -24,20 +24,23 @@ final class RecordsPresenter: RecordsPresenterProtocol {
     
     weak var view: RecordsViewProtocol?
     
-    private var resultGame: [ModelResultGame] = []
+    private var resultGame: [ModelResultGame] = [] {
+        didSet {
+            view?.succes(resultGame) 
+        }
+    }
     
     //MARK: - Init
     
     init(router: RouterProtocol) {
         self.router = router
-        fetchRecords()
     }
     
     func viewDidLoad() {
-        view?.succes(resultGame)
+        fetchRecords()
     }
     
     func fetchRecords() {
-        resultGame = UserDefaultsManager.shared.featchResultGame()
+        self.resultGame = UserDefaultsManager.shared.featchResultGame()
     }
 }

@@ -11,8 +11,11 @@ extension UIImageView {
     
     func loadImage(_ url: String) {
         let storageManager = StorageManager()
-        let photo = storageManager.loadImage(name: url)
-        self.image = photo
+        
+        DispatchQueue.main.async {
+            let photo = storageManager.loadImage(name: url)
+            self.image = photo
+        }
     }
 }
 
