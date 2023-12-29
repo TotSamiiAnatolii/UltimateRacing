@@ -8,6 +8,7 @@
 import UIKit
 
 protocol GameRacingPresenterProtocol {
+    
     var mainTitle: String { get }
     
     init(router: RouterProtocol)
@@ -25,7 +26,6 @@ protocol GameRacingPresenterProtocol {
     func saveResultGame()
     
     func loadSettingGame()
-    
 }
 
 final class GameRacingPresenter: GameRacingPresenterProtocol {

@@ -11,19 +11,19 @@ final class SettingGameMapper {
     
     private let storageManager = StorageManager()
     
-    func map(model: ModelSetting, colorCar: [UIColor], completion: @escaping (() -> Void)) -> ModelSettingDTO {
+    func map(model: ModelSetting, colorCar: [UIColor], completion: @escaping ((TypeCompletion) -> Void)) -> ModelSettingDTO {
         
         ModelSettingDTO(
             header: ModelMainHeader(
                 onAction: {
-                    completion()
+                    completion(.photo)
                 },
                 poster: storageManager.loadImage(name: model.photoUser) ?? Images.stab
             ),
             sections: [
                 TypeDataSection("Name", rows: [
                     .nameUser(ModelNameUserCell(onAction: { name in
-                        
+                        completion(.name(name))
                     }, name: model.nameUser), .bottom),
                 ]),
                 
@@ -56,3 +56,8 @@ final class SettingGameMapper {
     }
 }
 
+enum TypeCompletion {
+    
+    case photo
+    case name(String)
+}

@@ -67,6 +67,7 @@ final class NameUserCell: UITableViewCell, CornerRadiusConfigurable {
     }
     
     //MARK: - Public methods
+    
     public func setRoundCorner(state: RoundCornerCell, radius: CGFloat) {
         contentView.roundCorners(state.rawValue, radius: radius)
     }

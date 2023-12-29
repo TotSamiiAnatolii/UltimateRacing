@@ -39,19 +39,20 @@ final class GameRacingView: UIView {
     }
     
     private var widthCar: CGFloat {
-        return (roadbed.frame.size.width / 2) * 0.8
+        return AppDesign.widthCar(roadbed)
     }
     
     private var heightCar: CGFloat {
-        return bounds.size.height / 7
+        return AppDesign.heightCar(self
+        )
     }
     
     private var leftRoad: CGFloat {
-        return ((roadbed.frame.minX + roadbed.frame.midX)) / 2
+        return AppDesign.leftRoad(roadbed)
     }
     
     private var rightRoad: CGFloat {
-        return (roadbed.frame.maxX + (roadbed.frame.midX + 6)) / 2
+        return AppDesign.rightRoad(roadbed)
     }
     
     private var roadbed: UIView = UIView()
@@ -169,7 +170,7 @@ final class GameRacingView: UIView {
         let endPoint = CGPoint(x: view.bounds.midX, y: view.bounds.maxY)
         
         shapeLayer.strokeColor = UIColor.white.cgColor
-        shapeLayer.lineWidth = 12
+        shapeLayer.lineWidth = AppDesign.lineWidth
         shapeLayer.lineDashPattern = [AppDesign.dashSize, AppDesign.gapSize]
         shapeLayer.lineDashPhase = 40
         shapeLayer.fillRule = .evenOdd
@@ -232,6 +233,16 @@ final class GameRacingView: UIView {
         return ObstacleView()
     }
     
+    private func clearView() {
+        subviews.forEach({ obstacle in
+            if obstacle is ObstacleView && !obstacle.isHidden  {
+                gravity.removeItem(obstacle)
+                collider.removeItem(obstacle)
+                itemBehavior.removeItem(obstacle)
+            }
+        })
+    }
+    
     //MARK: - Public methods
     
     public func createObstacle() {
@@ -280,14 +291,7 @@ final class GameRacingView: UIView {
         shapeLayer.speed = 0
         gravity.magnitude = 0
         collider.removeItem(car)
-        
-        subviews.forEach({ obstacle in
-            if obstacle is ObstacleView && !obstacle.isHidden  {
-                gravity.removeItem(obstacle)
-                collider.removeItem(obstacle)
-                itemBehavior.removeItem(obstacle)
-            }
-        })
+        clearView()
     }
     
     public func repeatGame(_ settingForGame: ModelSetting) {

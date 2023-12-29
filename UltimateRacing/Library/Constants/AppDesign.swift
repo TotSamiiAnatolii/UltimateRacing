@@ -31,5 +31,23 @@ enum AppDesign {
     
     static let photoUserWidth: CGFloat = 64
     
+    static let lineWidth: CGFloat = 12
+    
     static let addPhotoUserButton: (height: CGFloat, width: CGFloat) = (height: 148, width: 148)
+    
+    static func widthCar(_ view: UIView) -> CGFloat {
+        (view.frame.size.width / 2) * 0.8
+    }
+    
+    static func heightCar(_ view: UIView) -> CGFloat {
+         view.bounds.size.height / 7
+    }
+    
+    static func leftRoad(_ view: UIView) -> CGFloat {
+        ((view.frame.minX + view.frame.midX)) / 2
+    }
+    
+    static func rightRoad(_ view: UIView) -> CGFloat  {
+        (view.frame.maxX + (view.frame.midX + (lineWidth/2))) / 2
+    }
 }

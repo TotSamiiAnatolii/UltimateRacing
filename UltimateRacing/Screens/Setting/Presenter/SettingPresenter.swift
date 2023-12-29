@@ -20,6 +20,8 @@ protocol SettingPresenterProtocol {
     func saveSettingForGame()
     
     func addPhotoUser()
+    
+    func addNameUser(_ name: String)
   
     func updateCarColor(_ color: UIColor)
     
@@ -65,8 +67,14 @@ final class SettingPresenter: NSObject, SettingPresenterProtocol {
     
     func viewDidLoad() {
         guard let modelSetting else {return}
-        self.model = mapper.map(model: modelSetting, colorCar: colorCar, completion: {
-            self.addPhotoUser()
+        self.model = mapper.map(model: modelSetting, colorCar: colorCar, completion: { [weak self] type in
+            
+            switch type {
+            case .photo:
+                self?.addPhotoUser()
+            case let .name(name):
+                self?.addNameUser(name)
+            }
         })
     }
     
@@ -107,6 +115,10 @@ final class SettingPresenter: NSObject, SettingPresenterProtocol {
         catch {
             print(error)
         }
+    }
+    
+    func addNameUser(_ name: String) {
+        modelSetting?.nameUser = name
     }
     
      func indexForColorCar() -> IndexPath {
